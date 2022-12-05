@@ -1,6 +1,8 @@
 // Inputs
 export const title = document.querySelector('#title');
 export const author = document.querySelector('#author');
+export const req = document.querySelector('#req');
+export const suc = document.querySelector('#suc');
 
 // Buttons
 export const addBtn = document.querySelector('#add');

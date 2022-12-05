@@ -134,6 +134,16 @@ section {
   border: 2px solid black;
 }
 
+#req {
+  display: none;
+  color: red;
+}
+
+#suc {
+  display: none;
+  color: green;
+}
+
 #conSec,
 #addSec {
   display: none;

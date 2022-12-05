@@ -7,7 +7,7 @@ export class BooksClass {
     this.author = author;
   }
 
-    add() { //eslint-disable-line
+    add = () => { //eslint-disable-line
     const title = document.querySelector('#title').value;
     const author = document.querySelector('#author').value;
     const book = {
@@ -27,7 +27,7 @@ export class BooksClass {
     }
   }
 
-    showBooks() { //eslint-disable-line
+    showBooks = () => { //eslint-disable-line
     const divP = document.querySelector('#booksIn');
     const getBooks = JSON.parse(localStorage.getItem('books'));
 
@@ -45,7 +45,7 @@ export class BooksClass {
     }
   }
 
-    del(id) { //eslint-disable-line
+    del = (id) => { //eslint-disable-line
     getBooksag.splice(id, 1);
     localStorage.setItem('books', JSON.stringify(getBooksag));
   }

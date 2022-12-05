@@ -1,15 +1,16 @@
 import { BooksClass } from './class.js';
-import { title, author } from './declaration.js';
+import { title, author, req, suc } from './declaration.js';
 
 const addBtnFunc = () => {
     if (title.value == "" || author.value == "") {//eslint-disable-line
-      alert('Please fill the required Fields'); //eslint-disable-line
+     req.style.display = "flex";
   } else {
     const bookAd = new BooksClass();
     bookAd.add();
-      alert('Book added successfully'); //eslint-disable-line
-    title.value = '';
-    author.value = '';
+    req.style.display = "none";
+    suc.style.display = "flex";
+    title.value = "";
+    author.value = "";
   }
 };
 

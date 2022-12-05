@@ -4,7 +4,7 @@ const slf = () => {
   listSec.style.display = 'flex';
   addSec.style.display = 'none';
   conSec.style.display = 'none';
-    window.location.replace('#'); //eslint-disable-line
+  window.location.reload(); //eslint-disable-line
 };
 
 export default slf;
